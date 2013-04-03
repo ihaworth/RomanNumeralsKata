@@ -57,6 +57,12 @@ public class RomanNumeralsTest
 		assertThatIntegerGivesRoman(85, "LXXXV");
 		assertThatIntegerGivesRoman(88, "LXXXVIII");
 		assertThatIntegerGivesRoman(89, "LXXXIX");
+		assertThatIntegerGivesRoman(90, "XC");
+		assertThatIntegerGivesRoman(100, "C");
+		assertThatIntegerGivesRoman(400, "CD");
+		assertThatIntegerGivesRoman(500, "D");
+		assertThatIntegerGivesRoman(900, "CM");
+		assertThatIntegerGivesRoman(1000, "M");
 	}
 
 	private void assertThatIntegerGivesRoman(int number, String expectedRoman)
