@@ -2,8 +2,8 @@ package roman.numerals;
 
 public class Roman
 {
-	private String[] numerals   = { "XL", "X", "IX", "V", "IV", "I" };
-	private int[] numeralValues = {  40,   10,   9,   5,    4,   1  };
+	private String[] numerals   = { "L", "XL", "X", "IX", "V", "IV", "I" };
+	private int[] numeralValues = {  50,  40,   10,   9,   5,    4,   1  };
 
 	public String generate(int number)
 	{
