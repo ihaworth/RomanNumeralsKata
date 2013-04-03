@@ -10,8 +10,13 @@ public class Roman
 		if (number == 10)
 			return "X";
 		
+		
+		if (number > 9)
+			return generate(9) + generate(number - 9);
+		
 		if (number == 9)
 			return "IX";
+		
 		
 		if (number > 5)
 			return generate(5) + generate(number - 5);
@@ -19,8 +24,12 @@ public class Roman
 		if (number == 5)
 			return "V";
 		
+		if (number > 4)
+			return generate(4) + generate(number - 4);
+		
 		if (number == 4)
 			return "IV";
+		
 		
 		if (number > 1)
 			return generate(1) + generate(number - 1);
