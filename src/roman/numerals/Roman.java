@@ -4,6 +4,9 @@ public class Roman
 {
 	public String generate(int number)
 	{
+		if (number > 10)
+			return generate(10) + generate(number - 10);
+		
 		if (number == 10)
 			return "X";
 		
