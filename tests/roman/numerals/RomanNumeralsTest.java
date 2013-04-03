@@ -9,14 +9,14 @@ import org.junit.Test;
 public class RomanNumeralsTest
 {
 	@Test
-	public void oneInRomanNumeralsIsI()
+	public void checkIntegerToRomanNumeralConversion()
 	{
-		assertThat(new Roman().generate(1), is(equalTo("I")));
+		assertThatIntegerGivesRoman(1, "I");
+		assertThatIntegerGivesRoman(2, "II");
 	}
 
-	@Test
-	public void twoInRomanNumeralsIsII()
+	private void assertThatIntegerGivesRoman(int number, String expectedRoman)
 	{
-		assertThat(new Roman().generate(2), is(equalTo("II")));
+		assertThat("Converting " + number, new Roman().generate(number), is(equalTo(expectedRoman)));
 	}
 }
