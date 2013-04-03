@@ -7,6 +7,9 @@ public class Roman
 		if (number == 5)
 			return "V";
 		
+		if (number == 4)
+			return "IV";
+		
 		if (number > 1)
 			return generate(1) + generate(number - 1);
 		
