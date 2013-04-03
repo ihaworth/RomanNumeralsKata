@@ -9,13 +9,10 @@ public class Roman
 	{
 		for (int i = 0; i < numerals.length; i++)
 		{
-			if (number > values[i])
-				return generate(values[i]) + generate(number - values[i]);
-			
-			if (number == values[i])
-				return numerals[i];
+			if (number >= values[i])
+				return numerals[i] + generate(number - values[i]);
 		}
 
-		return null;
+		return "";
 	}
 }
