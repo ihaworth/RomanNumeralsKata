@@ -13,4 +13,10 @@ public class RomanNumeralsTest
 	{
 		assertThat(new Roman().generate(1), is(equalTo("I")));
 	}
+
+	@Test
+	public void twoInRomanNumeralsIsII()
+	{
+		assertThat(new Roman().generate(2), is(equalTo("II")));
+	}
 }
