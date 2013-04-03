@@ -38,6 +38,7 @@ public class RomanNumeralsTest
 		assertThatIntegerGivesRoman(36, "XXXVI");
 		assertThatIntegerGivesRoman(39, "XXXIX");
 		assertThatIntegerGivesRoman(40, "XL");
+		assertThatIntegerGivesRoman(50, "L");
 	}
 
 	private void assertThatIntegerGivesRoman(int number, String expectedRoman)
